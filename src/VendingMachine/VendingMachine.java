@@ -1,7 +1,7 @@
-package StatePattern;
+package VendingMachine;
 
-import StatePattern.VendingStates.Idle;
-import StatePattern.VendingStates.State;
+import VendingMachine.VendingStates.Idle;
+import VendingMachine.VendingStates.State;
 
 import java.util.ArrayList;
 import java.util.List;

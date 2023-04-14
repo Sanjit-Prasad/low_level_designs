@@ -1,24 +1,22 @@
-package StatePattern.VendingStates;
+package VendingMachine.VendingStates;
 
-import StatePattern.VendingMachine;
+import VendingMachine.VendingMachine;
 
-public class DispenseProduct implements State {
+public class Idle implements State {
 
     VendingMachine vendingMachine;
-    int productCode;
-
-    public DispenseProduct(VendingMachine vendingMachine, int productCode) {
+    public Idle(VendingMachine vendingMachine) {
         this.vendingMachine = vendingMachine;
-        this.productCode = productCode;
     }
 
     public String toString() {
-        return "Currently, Vending Machine is in 'Dispensing Product' state";
+        return "Currently, Vending Machine is in 'Idle' state";
     }
 
     @Override
     public void pressInsertCoinButton() {
-
+        System.out.println("Press insert coin button!");
+        this.vendingMachine.setState(new HasMoney(vendingMachine));
     }
 
     @Override
@@ -43,9 +41,7 @@ public class DispenseProduct implements State {
 
     @Override
     public void dispenseProduct() {
-        System.out.println("Dispensing the product");
-        vendingMachine.getInventory().removeItemFromShelf(productCode);
-        System.out.println("Product count updated!");
+
     }
 
     @Override

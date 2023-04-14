@@ -1,4 +1,4 @@
-package StatePattern.VendingStates;
+package VendingMachine.VendingStates;
 
 public interface State {
 

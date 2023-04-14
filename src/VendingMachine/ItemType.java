@@ -1,4 +1,4 @@
-package StatePattern;
+package VendingMachine;
 
 public enum ItemType {
     COKE,

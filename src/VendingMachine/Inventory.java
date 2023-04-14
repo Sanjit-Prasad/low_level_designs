@@ -1,4 +1,4 @@
-package StatePattern;
+package VendingMachine;
 
 import java.util.ArrayList;
 import java.util.HashMap;

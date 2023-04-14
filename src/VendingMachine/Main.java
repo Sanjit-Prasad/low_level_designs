@@ -1,4 +1,4 @@
-package StatePattern;
+package VendingMachine;
 
 public class Main {
 
@@ -15,6 +15,7 @@ public class Main {
         vendingMachine.printState();
 
         vendingMachine.state.insertCoin();
+
         vendingMachine.state.pressProductSelectionButton();
 
         vendingMachine.printState();

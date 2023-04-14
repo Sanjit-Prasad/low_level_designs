@@ -1,6 +1,6 @@
-package StatePattern.VendingStates;
+package VendingMachine.VendingStates;
 
-import StatePattern.VendingMachine;
+import VendingMachine.VendingMachine;
 
 public class SelectionState implements State {
 

@@ -1,4 +1,4 @@
-package StatePattern;
+package VendingMachine;
 
 public class Item {
     int itemCode;

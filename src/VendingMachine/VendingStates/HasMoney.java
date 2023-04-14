@@ -1,7 +1,7 @@
-package StatePattern.VendingStates;
+package VendingMachine.VendingStates;
 
-import StatePattern.Coin;
-import StatePattern.VendingMachine;
+import VendingMachine.Coin;
+import VendingMachine.VendingMachine;
 
 public class HasMoney implements State {
 
