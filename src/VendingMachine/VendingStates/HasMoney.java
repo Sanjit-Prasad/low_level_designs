@@ -56,7 +56,7 @@ public class HasMoney implements State {
     }
 
     @Override
-    public void getChange() {
+    public void getChange(int amount) {
 
     }
 

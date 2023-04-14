@@ -37,7 +37,7 @@ public class DispenseProduct implements State {
     }
 
     @Override
-    public void getChange() {
+    public void getChange(int amount) {
 
     }
 

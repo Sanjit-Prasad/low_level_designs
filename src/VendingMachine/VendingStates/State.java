@@ -2,19 +2,19 @@ package VendingMachine.VendingStates;
 
 public interface State {
 
-    public void pressInsertCoinButton();
+    void pressInsertCoinButton();
 
-    public void insertCoin();
+    void insertCoin();
 
-    public void pressProductSelectionButton();
+    void pressProductSelectionButton();
 
-    public void productSelection();
+    void productSelection();
 
-    public void getChange();
+    void getChange(int amount);
 
-    public void dispenseProduct();
+    void dispenseProduct();
 
-    public void cancelOrRefund();
+    void cancelOrRefund();
 
-    public void updateInventory();
+    void updateInventory();
 }

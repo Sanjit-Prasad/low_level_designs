@@ -53,15 +53,16 @@ public class SelectionState implements State {
             System.out.println("Insufficient money provided, try again!");
             cancelOrRefund();
         }
-
-        System.out.println("Returning the change amount: " + (totalAmount-productPrice));
+        else {
+            getChange(totalAmount-productPrice);
+        }
         vendingMachine.setState(new DispenseProduct(vendingMachine, productCode));
 
     }
 
     @Override
-    public void getChange() {
-
+    public void getChange(int amount) {
+        System.out.println("Returning the change amount: " + amount);
     }
 
     @Override

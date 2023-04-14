@@ -35,7 +35,7 @@ public class Idle implements State {
     }
 
     @Override
-    public void getChange() {
+    public void getChange(int amount) {
 
     }
 
