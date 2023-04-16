@@ -25,6 +25,10 @@ public class ExpenseController {
             System.out.println("Check the split amount again!");
             return;
         }
+//        Expense tempExpense = new Expense.ExpenseBuilder()
+//                .expenseId()
+//                .description()
+//                .build();
         Expense expense = new Expense(expenseId, description, totalAmount, paidByUser, splitType, splits);
         expenses.add(expense);
         updateBalanceSheet(paidByUser, splits, totalAmount);
